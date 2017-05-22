@@ -1,1 +1,1 @@
-# 350-HTML-Assignment
+Enggen 350 Assignment 3 HTML prototype
