@@ -17,18 +17,43 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-</head>
+	<style>
+	input[type=text] {
+	width: 220px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	padding: 3px 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+	background-color: white;
+    background-image: url('assets/img/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+
+
+	input[type=text]:focus {
+    width: 100%;
+	}
+	</style>
+
+	</head>
 
 <body>
 
     <div class="header">
 			<img src="assets/img/BEACON-LOGO.jpg" alt="logo"/ style="background-color: #ffffff">
-			<h2>Hello Robert, Welcome to <b>The Beacon</b> of art history!</h2>
+			<h2>Hello <b style="color:#0a5872">Robert</b>, Welcome to <b style="color:#0a5872">Beacon ART</b><b> !</b></h2>
 			<h4>Wanganui High School</h4>
 	</div>
 
  	<div class="nav-container">
-			<ul class="nav nav-pills red nav-justified">  <!-- nav-justified" -->
+			<ul class="nav nav-pills red nav-justified">
 				<li><a data-toggle="pill" href="#home">Home</a></li>
 				<li class="active"><a data-toggle="pill" href="#Assignments">Assignments</a></li>
 				<li><a data-toggle="pill" href="#Grades">Grades</a></li>
@@ -37,14 +62,11 @@
 			<div class="clear"></div>
 	</div>
 
-<div class="container" style="position:relative;margin-top:120px">
+<div class="container" style="margin-top:100px;margin-bottom:80px">
+<div class="jumbotron">
   <div class="tab-content">
     <div id="home" class="tab-pane fade">
-      <h3>HOME</h3>
-		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="Assignments" class="tab-pane fade in active">
-      <h3>Menu 1</h3>
+        <h1>Announcements</h1>
 	    <p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet velit quis ligula tempor tempor. Nullam posuere ac augue sit amet egestas. Nam vitae nulla quis lorem consectetur molestie a vel massa. Morbi accumsan neque nulla, semper elementum est dignissim id. Sed interdum feugiat dolor egestas condimentum. Donec nec lacus leo. Etiam vitae accumsan nisi. Donec blandit nunc nisl. Nulla velit ante, auctor sit amet vestibulum vitae, efficitur id turpis. Fusce ac nulla placerat, maximus nisi eget, consectetur ipsum. Phasellus molestie arcu eget placerat hendrerit. Proin facilisis mollis commodo. Curabitur elementum in nulla volutpat dictum. Nulla eu rhoncus est. Sed in justo massa.
 		<br>
@@ -67,14 +89,65 @@
 		Quisque rutrum odio vestibulum orci pulvinar, eget rutrum mi porta. Donec dignissim, neque eu lobortis dapibus, enim metus sodales enim, id bibendum arcu augue nec libero. Fusce eu commodo nisl. Integer faucibus placerat maximus. Nunc lectus elit, tristique id viverra sit amet, tempor aliquet risus. Integer vitae est urna. Sed dignissim, urna in euismod mattis, dolor nisi tempor eros, ac vestibulum libero dolor eu risus. Sed vulputate ornare lorem, in lobortis tortor. Pellentesque cursus volutpat sem ut volutpat. Praesent tempus ex eu magna dapibus, at ornare ex dapibus.
 		</p>
     </div>
+    <div id="Assignments" class="tab-pane fade in active">
+		<h1>Assignments</h1>
+		<form>
+			<input type="text" name="search" placeholder="Search assignment..">
+		</form>
+		<table id="All_assignments">
+			<tr>
+				<th>Name</th>
+				<th>Type</th> 
+				<th>Status</th>
+				<th>Due Date</th>
+			</tr>
+			<tr>
+				<td>Assignment 1</td>
+				<td>Structured</td>
+				<td class="completed">Completed</td>
+				<td>12:20 3/5/2017</td>
+			</tr>
+			<tr>
+				<td>Assignment 2</td>
+				<td>Portfolio</td>
+				<td class="in_progress">In progress</td>
+				<td>13:10 5/5/2017</td>
+			</tr>
+			<tr>
+				<td>Assignment 3 &nbsp;<i class="fa fa-lock"></i></td>
+				<td>Structured</td>
+				<td class="uncompleted">Uncompleted</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<td>Assignment 4 &nbsp;<i class="fa fa-lock"></td>
+				<td>Portfolio</td>
+				<td class="uncompleted">Uncompleted</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<td>Assignment 5 &nbsp;<i class="fa fa-lock"></td>
+				<td>Structured</td>
+				<td class="uncompleted">Uncompleted</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<td>Assignment 6 &nbsp;<i class="fa fa-lock"></td>
+				<td>Portfolio</td>
+				<td class="uncompleted">Uncompleted</td>
+				<td>–</td>
+			</tr>
+		</table>
+    </div>
     <div id="Grades" class="tab-pane fade">
-      <h3>Menu 2</h3>
+      <h1>Grades</h1>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
     <div id="Peer_Group" class="tab-pane fade">
-      <h3>Menu 3</h3>
+      <h1>Peer Group</h1>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
+  </div>
   </div>
 </div>
 
