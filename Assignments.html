@@ -53,12 +53,34 @@
 	</div>
 
  	<div class="nav-container">
-			<ul class="nav nav-pills red nav-justified">
+			<ul class="nav nav-pills navbar-default" style="overflow:visible;">
 				<li><a data-toggle="pill" href="#home">Home</a></li>
 				<li class="active"><a data-toggle="pill" href="#Assignments">Assignments</a></li>
 				<li><a data-toggle="pill" href="#Grades">Grades</a></li>
 				<li><a data-toggle="pill" href="#Peer_Group">Peer Group</a></li>
+				<li class="dropdown" style="float:right;width:80px">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog" style="padding-right:5px"></i><span class="caret"></span></a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Support</a></li>
+					 <li class="divider"></li> 
+					<li><a href="#">Log Out</a></li>                        
+					</ul>
+				</li>
+				<li class="dropdown" style="float:right;width:80px">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user" style="padding-right:5px"></i><span class="caret"></span></a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">Profile</a></li>                     
+					</ul>
+				</li>
+				<li class="dropdown" style="float:right;width:80px">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bell" style="padding-right:5px"></i><span class="caret"></span></a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">All Notifications</a></li>                     
+					</ul>
+				</li>
 			</ul>
+
 			<div class="clear"></div>
 	</div>
 
@@ -143,9 +165,97 @@
       <h1>Grades</h1>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
+	
     <div id="Peer_Group" class="tab-pane fade">
-      <h1>Peer Group</h1>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <h1>Peer members</h1>
+	  <p style="text-align:right"><i>Click to review</i></p>
+	  
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 .col-xs-3 .col-md-3">
+					<img src="assets/img/avatar.png" alt="logo"/ class="img-responsive" width="50%">
+					<h3>Jensen lorem</h3>
+				</div>
+				<div class="col-sm-9 .col-xs-9 .col-md-9"><table id="All_assignments">
+				<tr>
+					<th>Name</th>
+					<th>Type</th> 
+					<th>Status</th>
+					<th>Review Status</th>
+						</tr>
+						<tr class="peer-assignments" onclick="document.location='#home'" style="cursor:pointer">
+							<td>Assignment 1</td>
+							<td>Structured</td>
+							<td class="in_progress">In progress</td>
+							<td>Not Reviewed</td>
+						</tr>
+						<tr class="peer-assignments" onclick="document.location='#home'" style="cursor:pointer">
+							<td>Assignment 2</td>
+							<td>Portfolio</td>
+							<td class="in_progress">In progress</td>
+							<td>Not Reviewed</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="row" style="padding-top:20px">
+				<div class="col-sm-3 .col-xs-3 .col-md-3">
+					<img src="assets/img/avatar.png" alt="logo"/ class="img-responsive" width="50%">
+					<h3>Jane lorem</h3>
+				</div>
+				<div class="col-sm-9 .col-xs-9 .col-md-9"><table id="All_assignments">
+				<tr>
+					<th>Name</th>
+					<th>Type</th> 
+					<th>Status</th>
+					<th>Review Status</th>
+						</tr>
+						<tr class="peer-assignments" onclick="document.location='#home'" style="cursor:pointer">
+							<td>Assignment 1</td>
+							<td>Structured</td>
+							<td class="in_progress">In progress</td>
+							<td>Not Reviewed</td>
+						</tr>
+						<tr class="peer-assignments" onclick="document.location='#home'" style="cursor:pointer">
+							<td>Assignment 2</td>
+							<td>Portfolio</td>
+							<td class="in_progress">In progress</td>
+							<td>Not Reviewed</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="row" style="padding-top:20px">
+				<div class="col-sm-3 .col-xs-3 .col-md-3">
+					<img src="assets/img/avatar.png" alt="logo"/ class="img-responsive" width="50%">
+					<h3>John lorem</h3>
+				</div>
+				<div class="col-sm-9 .col-xs-9 .col-md-9"><table id="All_assignments">
+				<tr>
+					<th>Name</th>
+					<th>Type</th> 
+					<th>Status</th>
+					<th>Review Status</th>
+						</tr>
+						<tr class="peer-assignments" onclick="document.location='#home'" style="cursor:pointer">
+							<td>Assignment 1</td>
+							<td>Structured</td>
+							<td class="in_progress">In progress</td>
+							<td>Not Reviewed</td>
+						</tr>
+						<tr class="peer-assignments" onclick="document.location='#home'" style="cursor:pointer">
+							<td>Assignment 2</td>
+							<td>Portfolio</td>
+							<td class="in_progress">In progress</td>
+							<td>Not Reviewed</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+		</div>
     </div>
   </div>
   </div>
