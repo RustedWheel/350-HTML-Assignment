@@ -15,30 +15,15 @@ $(window).scroll(function () {
     previousScroll = currentScroll;
 });
 
-
-/*  jQuery("document").ready(function($){
-	
-	var nav = $('.nav-container');
-	
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 120) {
-			nav.addClass("f-nav");
-		} else {
-			nav.removeClass("f-nav");
-		}
-	});
- 
-}); */
-
 jQuery("document").ready(function($){
 var pos = $('.nav-container').offset().top;
 var nav = $('.nav-container');
 
 $(window).scroll(function () {
-if ($(this).scrollTop() > pos) {
-nav.addClass("f-nav");
-} else {
-nav.removeClass("f-nav");
-}
-});
+	if ($(this).scrollTop() > pos) {
+		nav.addClass("f-nav");
+	} else {
+		nav.removeClass("f-nav");
+	}
+	});
 });
